@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStroge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="">
+            <p onclick="navChange('login')">Giriş Yap</p>
+            <p onclick="navChange('register')">Kayıt ol</p>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section id="login" class="login">
+            <span class="propic"></span>
+            <input type="text" name="user" id="loginUser" placeholder="Kullanıcı adı">
+            <input type="password" name="pass" id="loginPass" placeholder="Şifre">
+            <input type="submit" value="Giriş" onclick="login()">
+        </section>
+
+        <section id="register" class="register hide" >
+            <span class="img"></span>
+            <input type="text" name="user" id="regUser" placeholder="Kullanıcı adı">
+            <input type="email" name="email" id="regEmail" placeholder="Email">
+            <input type="password" name="pass" id="regPass" placeholder="Şifre">
+            <input type="submit" value="Kayıt Ol" onclick="register()">
+        </section>
+
+        <section id="home" class="home hide">
+            <span id="msg"></span>
+            <p onclick="logout()" class="logout">Çıkış Yap</p>
+                
+        </section>
+    </div>
+    
+        <div class="spinn">
+            <div class="spinner-box">
+                <div class="blue-orbit leo"></div>
+                <div class="green-orbit leo"></div>
+                <div class="red-orbit leo"></div>
+                <div class="white-orbit w1 leo"></div>
+                <div class="white-orbit w2 leo"></div>
+                <div class="white-orbit w3 leo"></div>
+            </div>
+        </div>
+       
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
